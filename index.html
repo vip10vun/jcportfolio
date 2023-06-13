@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- jc css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/effects.css">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <!-- font -->
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>JC PORTFOLIO</title>
+
+    <!-- swiper js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- semantic ui css -->
+    <link href="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="wholeWrap">
+        <div class="innerWrap">
+            <!-- Slider main container -->
+            <div class="swiper mySwiper">
+                <!-- Additional required wrapper -->
+                <div class="topNavWrap">
+                    <div class="logo">
+                        <!-- <img src="./img/jc_logo.png" alt="jc logo"> -->
+                        <!-- <img src="./img/jc_logo_bk.png" alt="jc logo"> -->
+                        <img src="./img/jc_logo_new_wh.png" alt="jc logo">
+                    </div>
+                    <!-- <ul class="menuWrap">
+                      <li>
+                        <a href="#">INDEX</a>
+                      </li>
+                      <li>
+                        <a href="#">ABOUT</a>
+                      </li>
+                      <li>
+                        <a href="#">PORTFOLIO</a>
+                      </li>
+                      <li>
+                        <a href="#">CONTACT</a>
+                      </li>
+                    </ul> -->
+                </div>
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide main_slide_1" id="s1">
+                      <div class="pfIntro">
+                        <div class="pfText pfTextTop">
+                          <svg id="logoTop" width="1306" height="136" viewBox="0 0 1306 136" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.0718384 133V3.172H61.4518C67.5278 3.172 72.9838 4.226 77.8198 6.334C82.6558 8.318 86.7478 11.108 90.0958 14.704C93.5678 18.3 96.2338 22.702 98.0938 27.91C99.9538 32.994 100.884 38.574 100.884 44.65C100.884 50.85 99.9538 56.492 98.0938 61.576C96.2338 66.66 93.5678 71 90.0958 74.596C86.7478 78.192 82.6558 81.044 77.8198 83.152C72.9838 85.136 67.5278 86.128 61.4518 86.128H28.3438V133H0.0718384ZM28.3438 61.576H58.1038C62.3198 61.576 65.6058 60.522 67.9618 58.414C70.4418 56.182 71.6818 52.958 71.6818 48.742V40.558C71.6818 36.342 70.4418 33.18 67.9618 31.072C65.6058 28.84 62.3198 27.724 58.1038 27.724H28.3438V61.576Z" fill="white"/>
+                            <path d="M211.414 135.232C202.858 135.232 195.046 133.806 187.978 130.954C180.91 128.102 174.896 123.886 169.936 118.306C164.976 112.602 161.132 105.596 158.404 97.288C155.676 88.856 154.312 79.122 154.312 68.086C154.312 57.05 155.676 47.378 158.404 39.07C161.132 30.638 164.976 23.632 169.936 18.052C174.896 12.348 180.91 8.07 187.978 5.218C195.046 2.366 202.858 0.940002 211.414 0.940002C219.97 0.940002 227.782 2.366 234.85 5.218C241.918 8.07 247.932 12.348 252.892 18.052C257.852 23.632 261.696 30.638 264.424 39.07C267.152 47.378 268.516 57.05 268.516 68.086C268.516 79.122 267.152 88.856 264.424 97.288C261.696 105.596 257.852 112.602 252.892 118.306C247.932 123.886 241.918 128.102 234.85 130.954C227.782 133.806 219.97 135.232 211.414 135.232ZM211.414 110.122C219.97 110.122 226.604 107.332 231.316 101.752C236.152 96.172 238.57 88.174 238.57 77.758V58.414C238.57 47.998 236.152 40 231.316 34.42C226.604 28.84 219.97 26.05 211.414 26.05C202.858 26.05 196.162 28.84 191.326 34.42C186.614 40 184.258 47.998 184.258 58.414V77.758C184.258 88.174 186.614 96.172 191.326 101.752C196.162 107.332 202.858 110.122 211.414 110.122Z" fill="white"/>
+                            <path d="M357.586 133H329.314V3.172H390.88C396.832 3.172 402.226 4.164 407.062 6.148C411.898 8.132 415.99 10.984 419.338 14.704C422.81 18.3 425.476 22.64 427.336 27.724C429.196 32.808 430.126 38.45 430.126 44.65C430.126 53.454 428.142 61.142 424.174 67.714C420.33 74.286 414.44 79.06 406.504 82.036L431.986 133H400.552L377.86 85.384H357.586V133ZM387.346 61.576C391.562 61.576 394.848 60.522 397.204 58.414C399.684 56.182 400.924 52.958 400.924 48.742V40.558C400.924 36.342 399.684 33.18 397.204 31.072C394.848 28.84 391.562 27.724 387.346 27.724H357.586V61.576H387.346Z" fill="white"/>
+                            <path d="M541.431 28.282V133H513.159V28.282H478.005V3.172H576.585V28.282H541.431Z" fill="white"/>
+                            <path d="M633.126 133V3.172H719.244V28.282H661.398V54.88H710.688V79.804H661.398V133H633.126Z" fill="white"/>
+                            <path d="M825.578 135.232C817.022 135.232 809.21 133.806 802.142 130.954C795.074 128.102 789.06 123.886 784.1 118.306C779.14 112.602 775.296 105.596 772.568 97.288C769.84 88.856 768.476 79.122 768.476 68.086C768.476 57.05 769.84 47.378 772.568 39.07C775.296 30.638 779.14 23.632 784.1 18.052C789.06 12.348 795.074 8.07 802.142 5.218C809.21 2.366 817.022 0.940002 825.578 0.940002C834.134 0.940002 841.946 2.366 849.014 5.218C856.082 8.07 862.096 12.348 867.056 18.052C872.016 23.632 875.86 30.638 878.588 39.07C881.316 47.378 882.68 57.05 882.68 68.086C882.68 79.122 881.316 88.856 878.588 97.288C875.86 105.596 872.016 112.602 867.056 118.306C862.096 123.886 856.082 128.102 849.014 130.954C841.946 133.806 834.134 135.232 825.578 135.232ZM825.578 110.122C834.134 110.122 840.768 107.332 845.48 101.752C850.316 96.172 852.734 88.174 852.734 77.758V58.414C852.734 47.998 850.316 40 845.48 34.42C840.768 28.84 834.134 26.05 825.578 26.05C817.022 26.05 810.326 28.84 805.49 34.42C800.778 40 798.422 47.998 798.422 58.414V77.758C798.422 88.174 800.778 96.172 805.49 101.752C810.326 107.332 817.022 110.122 825.578 110.122Z" fill="white"/>
+                            <path d="M943.477 133V3.172H971.749V107.89H1021.22V133H943.477Z" fill="white"/>
+                            <path d="M1074.29 133V110.494H1091.03V25.678H1074.29V3.172H1136.04V25.678H1119.3V110.494H1136.04V133H1074.29Z" fill="white"/>
+                            <path d="M1248.87 135.232C1240.32 135.232 1232.5 133.806 1225.44 130.954C1218.37 128.102 1212.35 123.886 1207.39 118.306C1202.43 112.602 1198.59 105.596 1195.86 97.288C1193.13 88.856 1191.77 79.122 1191.77 68.086C1191.77 57.05 1193.13 47.378 1195.86 39.07C1198.59 30.638 1202.43 23.632 1207.39 18.052C1212.35 12.348 1218.37 8.07 1225.44 5.218C1232.5 2.366 1240.32 0.940002 1248.87 0.940002C1257.43 0.940002 1265.24 2.366 1272.31 5.218C1279.38 8.07 1285.39 12.348 1290.35 18.052C1295.31 23.632 1299.15 30.638 1301.88 39.07C1304.61 47.378 1305.98 57.05 1305.98 68.086C1305.98 79.122 1304.61 88.856 1301.88 97.288C1299.15 105.596 1295.31 112.602 1290.35 118.306C1285.39 123.886 1279.38 128.102 1272.31 130.954C1265.24 133.806 1257.43 135.232 1248.87 135.232ZM1248.87 110.122C1257.43 110.122 1264.06 107.332 1268.77 101.752C1273.61 96.172 1276.03 88.174 1276.03 77.758V58.414C1276.03 47.998 1273.61 40 1268.77 34.42C1264.06 28.84 1257.43 26.05 1248.87 26.05C1240.32 26.05 1233.62 28.84 1228.78 34.42C1224.07 40 1221.72 47.998 1221.72 58.414V77.758C1221.72 88.174 1224.07 96.172 1228.78 101.752C1233.62 107.332 1240.32 110.122 1248.87 110.122Z" fill="white"/>
+                          </svg>
+                        </div>
+                        <div class="pfText pfTextMid">
+                          <svg id="logo" width="1308" height="138" viewBox="0 0 1308 138" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.07184 134V4.172H62.4518C68.5278 4.172 73.9838 5.226 78.8198 7.334C83.6558 9.318 87.7478 12.108 91.0958 15.704C94.5678 19.3 97.2338 23.702 99.0938 28.91C100.954 33.994 101.884 39.574 101.884 45.65C101.884 51.85 100.954 57.492 99.0938 62.576C97.2338 67.66 94.5678 72 91.0958 75.596C87.7478 79.192 83.6558 82.044 78.8198 84.152C73.9838 86.136 68.5278 87.128 62.4518 87.128H29.3438V134H1.07184ZM29.3438 62.576H59.1038C63.3198 62.576 66.6058 61.522 68.9618 59.414C71.4418 57.182 72.6818 53.958 72.6818 49.742V41.558C72.6818 37.342 71.4418 34.18 68.9618 32.072C66.6058 29.84 63.3198 28.724 59.1038 28.724H29.3438V62.576Z" stroke="white" stroke-width="0.9" mask="url(#path-1-outside-1_1_4)"/>
+                            <path d="M212.414 136.232C203.858 136.232 196.046 134.806 188.978 131.954C181.91 129.102 175.896 124.886 170.936 119.306C165.976 113.602 162.132 106.596 159.404 98.288C156.676 89.856 155.312 80.122 155.312 69.086C155.312 58.05 156.676 48.378 159.404 40.07C162.132 31.638 165.976 24.632 170.936 19.052C175.896 13.348 181.91 9.07 188.978 6.218C196.046 3.366 203.858 1.94 212.414 1.94C220.97 1.94 228.782 3.366 235.85 6.218C242.918 9.07 248.932 13.348 253.892 19.052C258.852 24.632 262.696 31.638 265.424 40.07C268.152 48.378 269.516 58.05 269.516 69.086C269.516 80.122 268.152 89.856 265.424 98.288C262.696 106.596 258.852 113.602 253.892 119.306C248.932 124.886 242.918 129.102 235.85 131.954C228.782 134.806 220.97 136.232 212.414 136.232ZM212.414 111.122C220.97 111.122 227.604 108.332 232.316 102.752C237.152 97.172 239.57 89.174 239.57 78.758V59.414C239.57 48.998 237.152 41 232.316 35.42C227.604 29.84 220.97 27.05 212.414 27.05C203.858 27.05 197.162 29.84 192.326 35.42C187.614 41 185.258 48.998 185.258 59.414V78.758C185.258 89.174 187.614 97.172 192.326 102.752C197.162 108.332 203.858 111.122 212.414 111.122Z" stroke="white" stroke-width="0.9" mask="url(#path-1-outside-1_1_4)"/>
+                            <path d="M358.586 134H330.314V4.172H391.88C397.832 4.172 403.226 5.164 408.062 7.148C412.898 9.132 416.99 11.984 420.338 15.704C423.81 19.3 426.476 23.64 428.336 28.724C430.196 33.808 431.126 39.45 431.126 45.65C431.126 54.454 429.142 62.142 425.174 68.714C421.33 75.286 415.44 80.06 407.504 83.036L432.986 134H401.552L378.86 86.384H358.586V134ZM388.346 62.576C392.562 62.576 395.848 61.522 398.204 59.414C400.684 57.182 401.924 53.958 401.924 49.742V41.558C401.924 37.342 400.684 34.18 398.204 32.072C395.848 29.84 392.562 28.724 388.346 28.724H358.586V62.576H388.346Z" stroke="white" stroke-width="0.9" mask="url(#path-1-outside-1_1_4)"/>
+                            <path d="M542.431 29.282V134H514.159V29.282H479.005V4.172H577.585V29.282H542.431Z" stroke="white" stroke-width="0.9" mask="url(#path-1-outside-1_1_4)"/>
+                            <path d="M634.126 134V4.172H720.244V29.282H662.398V55.88H711.688V80.804H662.398V134H634.126Z" stroke="white" stroke-width="0.9" mask="url(#path-1-outside-1_1_4)"/>
+                            <path d="M826.578 136.232C818.022 136.232 810.21 134.806 803.142 131.954C796.074 129.102 790.06 124.886 785.1 119.306C780.14 113.602 776.296 106.596 773.568 98.288C770.84 89.856 769.476 80.122 769.476 69.086C769.476 58.05 770.84 48.378 773.568 40.07C776.296 31.638 780.14 24.632 785.1 19.052C790.06 13.348 796.074 9.07 803.142 6.218C810.21 3.366 818.022 1.94 826.578 1.94C835.134 1.94 842.946 3.366 850.014 6.218C857.082 9.07 863.096 13.348 868.056 19.052C873.016 24.632 876.86 31.638 879.588 40.07C882.316 48.378 883.68 58.05 883.68 69.086C883.68 80.122 882.316 89.856 879.588 98.288C876.86 106.596 873.016 113.602 868.056 119.306C863.096 124.886 857.082 129.102 850.014 131.954C842.946 134.806 835.134 136.232 826.578 136.232ZM826.578 111.122C835.134 111.122 841.768 108.332 846.48 102.752C851.316 97.172 853.734 89.174 853.734 78.758V59.414C853.734 48.998 851.316 41 846.48 35.42C841.768 29.84 835.134 27.05 826.578 27.05C818.022 27.05 811.326 29.84 806.49 35.42C801.778 41 799.422 48.998 799.422 59.414V78.758C799.422 89.174 801.778 97.172 806.49 102.752C811.326 108.332 818.022 111.122 826.578 111.122Z" stroke="white" stroke-width="0.9" mask="url(#path-1-outside-1_1_4)"/>
+                            <path d="M944.477 134V4.172H972.749V108.89H1022.22V134H944.477Z" stroke="white" stroke-width="0.9" mask="url(#path-1-outside-1_1_4)"/>
+                            <path d="M1075.29 134V111.494H1092.03V26.678H1075.29V4.172H1137.04V26.678H1120.3V111.494H1137.04V134H1075.29Z" stroke="white" stroke-width="0.9" mask="url(#path-1-outside-1_1_4)"/>
+                            <path d="M1249.87 136.232C1241.32 136.232 1233.5 134.806 1226.44 131.954C1219.37 129.102 1213.35 124.886 1208.39 119.306C1203.43 113.602 1199.59 106.596 1196.86 98.288C1194.13 89.856 1192.77 80.122 1192.77 69.086C1192.77 58.05 1194.13 48.378 1196.86 40.07C1199.59 31.638 1203.43 24.632 1208.39 19.052C1213.35 13.348 1219.37 9.07 1226.44 6.218C1233.5 3.366 1241.32 1.94 1249.87 1.94C1258.43 1.94 1266.24 3.366 1273.31 6.218C1280.38 9.07 1286.39 13.348 1291.35 19.052C1296.31 24.632 1300.15 31.638 1302.88 40.07C1305.61 48.378 1306.98 58.05 1306.98 69.086C1306.98 80.122 1305.61 89.856 1302.88 98.288C1300.15 106.596 1296.31 113.602 1291.35 119.306C1286.39 124.886 1280.38 129.102 1273.31 131.954C1266.24 134.806 1258.43 136.232 1249.87 136.232ZM1249.87 111.122C1258.43 111.122 1265.06 108.332 1269.77 102.752C1274.61 97.172 1277.03 89.174 1277.03 78.758V59.414C1277.03 48.998 1274.61 41 1269.77 35.42C1265.06 29.84 1258.43 27.05 1249.87 27.05C1241.32 27.05 1234.62 29.84 1229.78 35.42C1225.07 41 1222.72 48.998 1222.72 59.414V78.758C1222.72 89.174 1225.07 97.172 1229.78 102.752C1234.62 108.332 1241.32 111.122 1249.87 111.122Z" stroke="white" stroke-width="0.9" mask="url(#path-1-outside-1_1_4)"/>
+                            </svg>
+                        </div>
+                        <div class="pfText pfTextbot">
+                          <svg id="logoBot" width="1306" height="136" viewBox="0 0 1306 136" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.0718384 133V3.172H61.4518C67.5278 3.172 72.9838 4.226 77.8198 6.334C82.6558 8.318 86.7478 11.108 90.0958 14.704C93.5678 18.3 96.2338 22.702 98.0938 27.91C99.9538 32.994 100.884 38.574 100.884 44.65C100.884 50.85 99.9538 56.492 98.0938 61.576C96.2338 66.66 93.5678 71 90.0958 74.596C86.7478 78.192 82.6558 81.044 77.8198 83.152C72.9838 85.136 67.5278 86.128 61.4518 86.128H28.3438V133H0.0718384ZM28.3438 61.576H58.1038C62.3198 61.576 65.6058 60.522 67.9618 58.414C70.4418 56.182 71.6818 52.958 71.6818 48.742V40.558C71.6818 36.342 70.4418 33.18 67.9618 31.072C65.6058 28.84 62.3198 27.724 58.1038 27.724H28.3438V61.576Z" fill="white"/>
+                            <path d="M211.414 135.232C202.858 135.232 195.046 133.806 187.978 130.954C180.91 128.102 174.896 123.886 169.936 118.306C164.976 112.602 161.132 105.596 158.404 97.288C155.676 88.856 154.312 79.122 154.312 68.086C154.312 57.05 155.676 47.378 158.404 39.07C161.132 30.638 164.976 23.632 169.936 18.052C174.896 12.348 180.91 8.07 187.978 5.218C195.046 2.366 202.858 0.940002 211.414 0.940002C219.97 0.940002 227.782 2.366 234.85 5.218C241.918 8.07 247.932 12.348 252.892 18.052C257.852 23.632 261.696 30.638 264.424 39.07C267.152 47.378 268.516 57.05 268.516 68.086C268.516 79.122 267.152 88.856 264.424 97.288C261.696 105.596 257.852 112.602 252.892 118.306C247.932 123.886 241.918 128.102 234.85 130.954C227.782 133.806 219.97 135.232 211.414 135.232ZM211.414 110.122C219.97 110.122 226.604 107.332 231.316 101.752C236.152 96.172 238.57 88.174 238.57 77.758V58.414C238.57 47.998 236.152 40 231.316 34.42C226.604 28.84 219.97 26.05 211.414 26.05C202.858 26.05 196.162 28.84 191.326 34.42C186.614 40 184.258 47.998 184.258 58.414V77.758C184.258 88.174 186.614 96.172 191.326 101.752C196.162 107.332 202.858 110.122 211.414 110.122Z" fill="white"/>
+                            <path d="M357.586 133H329.314V3.172H390.88C396.832 3.172 402.226 4.164 407.062 6.148C411.898 8.132 415.99 10.984 419.338 14.704C422.81 18.3 425.476 22.64 427.336 27.724C429.196 32.808 430.126 38.45 430.126 44.65C430.126 53.454 428.142 61.142 424.174 67.714C420.33 74.286 414.44 79.06 406.504 82.036L431.986 133H400.552L377.86 85.384H357.586V133ZM387.346 61.576C391.562 61.576 394.848 60.522 397.204 58.414C399.684 56.182 400.924 52.958 400.924 48.742V40.558C400.924 36.342 399.684 33.18 397.204 31.072C394.848 28.84 391.562 27.724 387.346 27.724H357.586V61.576H387.346Z" fill="white"/>
+                            <path d="M541.431 28.282V133H513.159V28.282H478.005V3.172H576.585V28.282H541.431Z" fill="white"/>
+                            <path d="M633.126 133V3.172H719.244V28.282H661.398V54.88H710.688V79.804H661.398V133H633.126Z" fill="white"/>
+                            <path d="M825.578 135.232C817.022 135.232 809.21 133.806 802.142 130.954C795.074 128.102 789.06 123.886 784.1 118.306C779.14 112.602 775.296 105.596 772.568 97.288C769.84 88.856 768.476 79.122 768.476 68.086C768.476 57.05 769.84 47.378 772.568 39.07C775.296 30.638 779.14 23.632 784.1 18.052C789.06 12.348 795.074 8.07 802.142 5.218C809.21 2.366 817.022 0.940002 825.578 0.940002C834.134 0.940002 841.946 2.366 849.014 5.218C856.082 8.07 862.096 12.348 867.056 18.052C872.016 23.632 875.86 30.638 878.588 39.07C881.316 47.378 882.68 57.05 882.68 68.086C882.68 79.122 881.316 88.856 878.588 97.288C875.86 105.596 872.016 112.602 867.056 118.306C862.096 123.886 856.082 128.102 849.014 130.954C841.946 133.806 834.134 135.232 825.578 135.232ZM825.578 110.122C834.134 110.122 840.768 107.332 845.48 101.752C850.316 96.172 852.734 88.174 852.734 77.758V58.414C852.734 47.998 850.316 40 845.48 34.42C840.768 28.84 834.134 26.05 825.578 26.05C817.022 26.05 810.326 28.84 805.49 34.42C800.778 40 798.422 47.998 798.422 58.414V77.758C798.422 88.174 800.778 96.172 805.49 101.752C810.326 107.332 817.022 110.122 825.578 110.122Z" fill="white"/>
+                            <path d="M943.477 133V3.172H971.749V107.89H1021.22V133H943.477Z" fill="white"/>
+                            <path d="M1074.29 133V110.494H1091.03V25.678H1074.29V3.172H1136.04V25.678H1119.3V110.494H1136.04V133H1074.29Z" fill="white"/>
+                            <path d="M1248.87 135.232C1240.32 135.232 1232.5 133.806 1225.44 130.954C1218.37 128.102 1212.35 123.886 1207.39 118.306C1202.43 112.602 1198.59 105.596 1195.86 97.288C1193.13 88.856 1191.77 79.122 1191.77 68.086C1191.77 57.05 1193.13 47.378 1195.86 39.07C1198.59 30.638 1202.43 23.632 1207.39 18.052C1212.35 12.348 1218.37 8.07 1225.44 5.218C1232.5 2.366 1240.32 0.940002 1248.87 0.940002C1257.43 0.940002 1265.24 2.366 1272.31 5.218C1279.38 8.07 1285.39 12.348 1290.35 18.052C1295.31 23.632 1299.15 30.638 1301.88 39.07C1304.61 47.378 1305.98 57.05 1305.98 68.086C1305.98 79.122 1304.61 88.856 1301.88 97.288C1299.15 105.596 1295.31 112.602 1290.35 118.306C1285.39 123.886 1279.38 128.102 1272.31 130.954C1265.24 133.806 1257.43 135.232 1248.87 135.232ZM1248.87 110.122C1257.43 110.122 1264.06 107.332 1268.77 101.752C1273.61 96.172 1276.03 88.174 1276.03 77.758V58.414C1276.03 47.998 1273.61 40 1268.77 34.42C1264.06 28.84 1257.43 26.05 1248.87 26.05C1240.32 26.05 1233.62 28.84 1228.78 34.42C1224.07 40 1221.72 47.998 1221.72 58.414V77.758C1221.72 88.174 1224.07 96.172 1228.78 101.752C1233.62 107.332 1240.32 110.122 1248.87 110.122Z" fill="white"/>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide main_slide_2" id="s2">
+                        <div class="slideLowWrap aboutContainer">
+                            <div class="title_group">
+                                <div class="slideText"><span>ABOUT ME</span></div>
+                            </div>
+                            <div class="slideContent">
+                              <div class="aboutPanelWrap">
+                                <div class="aboutTopPanel">
+                                  <div class="leftAbout">
+                                    <div class="myName"><span>이준찬_JUNCHAN.LEE</span></div>
+                                    <div class="pobu">
+                                      <span>안녕하세요 컨텐츠 기획, 제작, 촬영, 편집, 배포, 디자인, 개발까지</span>
+                                      <span>멀티미디어 컨텐츠 제작자로 두각을 나타내기 위한  준비를 마치고</span>
+                                      <span>함께 성장.도약.비상할 크리에이터 이준찬입니다.</span>
+                                       
+                                    </div>
+                                    <div class="aboutBtnWrap">
+                                      <button class="ui button youtube aboutBtn">More Details ></button>
+                                    </div>
+                                  </div>
+                                  <div class="rightAbout">
+                                    <div class="imgCircle">
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="aboutBotPanel">
+                                  <h4>Available Skills</h4>
+                                  <div class="aBoxWrap">
+                                    <div class="aBox aBox1">
+                                      <div class="aIcon">
+                                        <img src="./img/icon/ps_icon.png" alt="ps">
+                                      </div>
+                                      <div class="aText">PhotoShop</div>
+                                    </div>
+                                    <div class="aBox aBox2">
+                                      <div class="aIcon"><img src="./img/icon/ai_icon.png" alt="ai"></div>
+                                      <div class="aText">Illustrator</div>
+                                    </div>
+                                    <div class="aBox aBox3">
+                                      <div class="aIcon">
+                                        <img src="./img/icon/pr_icon.png" alt="pr">
+                                      </div>
+                                      <div class="aText">PremierePro</div>
+                                    </div>
+                                    <div class="aBox aBox4">
+                                      <div class="aIcon">
+                                        <img src="./img/icon/ae_icon.png" alt="ae">
+                                      </div>
+                                      <div class="aText">AfterEffects</div>
+                                    </div>
+                                    <div class="aBox aBox5">
+                                      <div class="aIcon">
+                                        <img src="./img/icon/github_icon2.png" alt="github">
+                                      </div>
+                                      <div class="aText">GitHub</div>
+                                    </div>
+                                    <div class="aBox aBox6">
+                                      <div class="aIcon">
+                                        <img src="./img/icon/vs_icon.png" alt="vs">
+                                      </div>
+                                      <div class="aText">VS CODE</div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide main_slide_3" id="s3">
+                        <div class="slideLowWrap pfContainer">
+                            <div class="title_group">
+                                <div class="slideText"><span>PORTFOLIO</span></div>
+                            </div>
+                            <div class="slideContent">
+                                <div class="ccWrap">
+                                    <div class="pfBox pfWeb">
+                                        <!-- <div class="circle wc">Web</div> -->
+                                        <div class="card">
+                                          <div class="circle" style="--clr:#BC2649;">
+                                              <!-- <img src="./img/cocacola_logo.png" alt="logo" class="logo"> -->
+                                              <span class="logo">WEB</span>
+                                          </div>
+                                          <div class="circleContent">
+                                              <h2>WEB DESIGN</h2>
+                                              <p>
+                                                 반응형 웹 디자인 포트폴리오
+                                              </p>
+                                              <a href="#" class="wc">보러가기</a>
+                                          </div>
+                                          <img src="./img/web_img.png" alt="web1" class="web_img product_img">
+                                      </div>
+                                    </div>
+                                    <div class="pfBox pfVideo">
+                                        <!-- <div class="circle vc">Video</div> -->
+                                        <div class="card">
+                                          <div class="circle" style="--clr:#BC2649;">
+                                              <!-- <img src="./img/cocacola_logo.png" alt="logo" class="logo"> -->
+                                              <span class="logo">VIDEO</span>
+                                          </div>
+                                          <div class="circleContent">
+                                              <h2>VIDEO PRODUCT.</h2>
+                                              <p>
+                                                 Pr, Ae 영상 포트폴리오
+                                              </p>
+                                              <a href="#" class="vc">보러가기</a>
+                                          </div>
+                                          <img src="./img/video_img.png" alt="video" class="video_img product_img">
+                                      </div>
+                                    </div>
+                                    <div class="pfBox pfGraphic">
+                                        <!-- <div class="circle gc">Graphic</div> -->
+                                        <div class="card">
+                                          <div class="circle" style="--clr:#BC2649;">
+                                              <!-- <img src="./img/cocacola_logo.png" alt="logo" class="logo"> -->
+                                              <span class="logo">GRAPHIC</span>
+                                          </div>
+                                          <div class="circleContent">
+                                              <h2>GRAPHIC DESIGN</h2>
+                                              <p>
+                                                포토샵, 일러스트 포트폴리오
+                                              </p>
+                                              <a href="#" class="gc">보러가기</a>
+                                          </div>
+                                          <img src="./img/graphic_img.png" alt="graphic" class="graphic_img product_img">
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide main_slide_4" id="s4">
+                        <div class="slideLowWrap contactContainer">
+                            <div class="title_group">
+                                <div class="slideText"><span>CONTACT</span></div>
+                            </div>
+                            <div class="slideContent">
+                                <div class="ccWrap">
+                                    <div class="cc ccLeft">
+                                        <div class="contactBox contactBox1">
+                                            <div class="contactIcon">
+                                                <img src="./img/icon/mobile_icon.png" alt="tel">
+                                            </div>
+                                            <div class="contactDetailWrap">
+                                                <div class="detailTitle">MOBILE.</div>
+                                                <div class="detailContent">010-2031-9856</div>
+                                            </div>
+                                        </div>
+                                        <div class="contactBox contactBox2">
+                                            <div class="contactIcon">
+                                                <img src="./img/icon/email_icon.png" alt="email">
+                                            </div>
+                                            <div class="contactDetailWrap">
+                                                <div class="detailTitle">EMAIL.</div>
+                                                <div class="detailContent">input@kakao.com</div>
+                                            </div>
+                                        </div>
+                                        <div class="contactBox contactBox3">
+                                            <div class="contactIcon">
+                                                <img src="./img/icon/youtube_icon.png" alt="youtube">
+                                            </div>
+                                            <div class="contactDetailWrap">
+                                                <div class="detailTitle">YOUTUBE CH. JCHANISM.</div>
+                                                <div class="detailContent">https://www.youtube.com/@jchanani</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cc ccRight">
+                                        <div class="contactBox contactBox4">
+                                            <div class="contactIcon">
+                                                <img src="./img/icon/insta_icon.png" alt="insta">
+                                            </div>
+                                            <div class="contactDetailWrap">
+                                                <div class="detailTitle">INSTAGRAM.</div>
+                                                <div class="detailContent">@JCHANANI</div>
+                                            </div>
+                                        </div>
+                                        <div class="contactBox contactBox5">
+                                            <div class="contactIcon">
+                                                <img src="./img/icon/github_icon.png" alt="github">
+                                            </div>
+                                            <div class="contactDetailWrap">
+                                                <div class="detailTitle">GITHUB.</div>
+                                                <div class="detailContent">https://github.com/vip10vun</div>
+                                            </div>
+                                        </div>
+                                        <!-- <div class="contactBox contactBox6">
+                                            <div class="contactIcon"></div>
+                                            <div class="contactDetailWrap">
+                                                <div class="detailTitle"></div>
+                                                <div class="detailContent"></div>
+                                            </div>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            
+                <!-- If we need navigation buttons -->
+                <!-- <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div> -->
+            
+                <!-- If we need scrollbar -->
+                <!-- <div class="swiper-scrollbar"></div> -->
+            </div>
+            <div class="rightBottomPoint"></div>
+        </div>
+    </div>
+
+    <!-- modals -->
+
+    <!-- about modal -->
+    <div class="ui modal aboutModal fullscreen">
+        
+        <i class="close icon"></i>
+        <div class="header">
+          ABOUT JC
+        </div>
+        <div class="content">
+          자기소개
+        </div>
+        <!-- <div class="actions">
+          <div class="ui deny button">Cancel</div>
+          <div class="ui button">OK</div>
+        </div> -->
+      </div>
+
+      <!-- web portfolio modal -->
+      <div class="ui modal webPfModal fullscreen">
+        <i class="close icon"></i>
+        <div class="header">
+          WEB DESIGN
+        </div>
+        <div class="content">
+            <div class="wdWrap">
+              <div class="responWeb responWeb1">
+                <div class="responImg">
+                  <img src="./img/responsive_frame_1.png" alt="jcbrandsite">
+                </div>
+                <p>JC BRAND SITE</p>
+                <span>JC 로고를 이용한 휠스크롤 브랜딩 사이트</span>
+                <div class="resBtnWrap">
+                  <button class="ui button basic gray siteBtn" onclick="window.open('http://jcportfolio.dothome.co.kr/jcbrand')">사이트</button>
+                  <button class="ui button basic gray figmaBtn">피그마</button>
+                </div>
+              </div>
+              <div class="responWeb responWeb2">
+                <div class="responImg">
+                  <img src="./img/responsive_frame_2.png" alt="dashboard">
+                </div>
+                <p>WEB DASHBOARD</p>
+                <span>벡스코 수산 전시회용 웹대시보드</span>
+                <div class="resBtnWrap">
+                  <button class="ui button basic gray siteBtn" onclick="window.open('http://jcportfolio.dothome.co.kr/kumhotemp')">사이트</button>
+                  <button class="ui button basic gray figmaBtn">깃허브</button>
+                </div>
+              </div>
+              <div class="responWeb responWeb3">
+                <div class="responImg">
+                  <img src="./img/responsive_frame_3.png" alt="tt">
+                </div>
+                <p>RESPONSIVE PORTFOILO</p>
+                <span>항만터미널 야드트럭 위치추적용 반응형 웹앱</span>
+                <div class="resBtnWrap">
+                  <button class="ui button basic gray siteBtn" onclick="window.open('http://jcportfolio.dothome.co.kr/totaltemp')">사이트</button>
+                  <button class="ui button basic gray figmaBtn">깃허브</button>
+                </div>
+              </div>
+            </div>
+          <!-- <div class="ui medium image">
+            <img src="/images/avatar/large/chris.jpg">
+          </div>
+          <div class="description">
+            <div class="ui header">We've auto-chosen a profile image for you.</div>
+            <p>We've grabbed the following image from the <a href="https://www.gravatar.com" target="_blank">gravatar</a> image associated with your registered e-mail address.</p>
+            <p>Is it okay to use this photo?</p>
+          </div> -->
+        </div>
+        <!-- <div class="actions">
+          <div class="ui black deny button">
+            Nope
+          </div>
+          <div class="ui positive right labeled icon button">
+            Yep, that's me
+            <i class="checkmark icon"></i>
+          </div>
+        </div> -->
+      </div>
+
+
+      <!-- video portfolio modal -->
+      <div class="ui modal videoPfModal fullscreen">
+        <i class="close icon"></i>
+        <div class="header">
+          JC VIDEO PRODUCT.
+        </div>
+        <div class="content">
+          <div class="vpWrap">
+            <div class="screenWrap">
+              <video muted autoplay loop controls>
+                <source src="./resouce/video/jc_introduction.mp4" type="video/mp4">
+                <strong>Your browser does not support the video tag.</strong>
+              </video>
+            </div>
+            <div class="selectWrap">
+              <div class="ui vertical buttons videoSelectBtns">
+                <button class="ui button black videoSelectBtn active jc_introduction_btn">자기소개 타이포그래피</button>
+                <button class="ui button videoSelectBtn jack_daniel_btn">잭다니엘 광고</button>
+                <button class="ui button videoSelectBtn jc_vlog_btn">V-Log by VLLO App.</button>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="ui medium image">
+            <img src="/images/avatar/large/chris.jpg">
+          </div>
+          <div class="description">
+            <div class="ui header">We've auto-chosen a profile image for you.</div>
+            <p>We've grabbed the following image from the <a href="https://www.gravatar.com" target="_blank">gravatar</a> image associated with your registered e-mail address.</p>
+            <p>Is it okay to use this photo?</p>
+          </div> -->
+        </div>
+        <!-- <div class="actions">
+          <div class="ui black deny button">
+            Nope
+          </div>
+          <div class="ui positive right labeled icon button">
+            Yep, that's me
+            <i class="checkmark icon"></i>
+          </div>
+        </div> -->
+      </div>
+
+
+      <!-- graphic portfolio modal :: 여기는 multiple modals 만들어야 함-->
+        <!-- first modal -->
+      <div class="ui modal graphicPfModal fullscreen coupled first">
+        <i class="close icon"></i>
+        <div class="header">
+          GRAPHIC DESIGN
+        </div>
+        <div class="content">
+          
+          <div class="gWrap">
+            <div class="gContainer gContainer1">
+                <div class="box" style="--i:0">
+                    <i></i>
+                    <div class="subContent">
+                        <img src="./img/img1_1.png" alt="img">
+                        <h2>ISOMETRIC DESIGN<br><span>GRAPHIC DESIGN</span></h2>
+                        <!-- <a href="#" class="isoBtn">바로가기</a> -->
+                        <button class="ui primary button cardBtn isoBtn">아이소메트릭</button>
+                    </div>
+                </div>
+                <div class="box" style="--i:1">
+                    <i></i>
+                    <div class="subContent">
+                        <img src="./img/img2_1.png" alt="img">
+                        <h2>CHARACTER DESIGN<br><span>GRAPHIC DESIGN</span></h2>
+                        <!-- <a href="#">바로가기</a> -->
+                        <button class="ui primary button cardBtn chaBtn">캐릭터디자인</button>
+
+                    </div>
+                </div>
+                <div class="box" style="--i:2">
+                    <i></i>
+                    <div class="subContent">
+                        <img src="./img/img3_1.png" alt="img">
+                        <h2>LOGO DESIGN<br><span>GRAPHIC DESIGN</span></h2>
+                        <!-- <a href="#">바로가기</a> -->
+                        <button class="ui primary button cardBtn lgBtn">로고디자인</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="gContainer gContainer2">
+                <div class="box" style="--i:3">
+                    <i></i>
+                    <div class="subContent">
+                        <img src="./img/img4_1.png" alt="img">
+                        <h2>PACKAGE DESIGN<br><span>GRAPHIC DESIGN</span></h2>
+                        <!-- <a href="#">바로가기</a> -->
+                        <button class="ui primary button cardBtn pkBtn">패키지디자인</button>
+
+                    </div>
+                </div>
+                <div class="box" style="--i:4">
+                    <i></i>
+                    <div class="subContent">
+                        <img src="./img/img5_1.png" alt="img">
+                        <h2>LEAFLET DESIGN<br><span>GRAPHIC DESIGN</span></h2>
+                        <!-- <a href="#">바로가기</a> -->
+                        <button class="ui primary button cardBtn lflBtn">리플렛디자인</button>
+
+                    </div>
+                </div>
+                <div class="box" style="--i:5">
+                    <i></i>
+                    <div class="subContent">
+                        <img src="./img/img6_1.png" alt="img">
+                        <h2>ADVERT. DESIGN<br><span>GRAPHIC DESIGN</span></h2>
+                        <!-- <a href="#">바로가기</a> -->
+                        <button class="ui primary button cardBtn advBtn">광고디자인</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            
+          
+        </div>
+        <!-- <div class="actions">
+          <div class="ui black deny button">
+            Nope
+          </div>
+          <div class="ui positive right labeled icon button">
+            Yep, that's me
+            <i class="checkmark icon"></i>
+          </div>
+        </div> -->
+      </div>
+
+    <!-- second modal -->
+
+        <!-- isometric modal -->
+        <div class="ui modal graphicPfModal isoModal fullscreen coupled second">
+            <i class="close icon"></i>
+            <!-- <div class="header">
+              2번째 모달입니다.
+            </div> -->
+            <div class="content">
+                <!-- 2번째 모달 - 아이소메트릭 풀페이지 슬라이드 -->
+                <!-- Swiper -->
+                <div class="swiper isoSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./img/graphic/isometric_1.png" alt="iso1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/graphic/isometric_2.png" alt="iso2">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/graphic/isometric_3.png" alt="iso3">
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+              
+            </div>
+            <!-- <div class="actions">
+              <div class="ui black deny button">
+                Nope
+              </div>
+              <div class="ui positive right labeled icon button">
+                Yep, that's me
+                <i class="checkmark icon"></i>
+              </div>
+            </div> -->
+          </div>
+
+        <!-- character modal-->
+        <div class="ui modal graphicPfModal chaModal fullscreen coupled second">
+            <i class="close icon"></i>
+            <!-- <div class="header">
+              2번째 모달입니다.
+            </div> -->
+            <div class="content">
+                <!-- 2번째 모달 - 캐릭터디자인 풀페이지 슬라이드 -->
+                <!-- Swiper -->
+                <div class="swiper chaSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./img/graphic/character_1.png" alt="character1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/graphic/character_2.png" alt="character2">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/graphic/character_3.png" alt="character3">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/graphic/character_4.png" alt="character4">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/graphic/character_5.png" alt="character5">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/graphic/character_6.png" alt="character6">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/graphic/character_7.png" alt="character7">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/graphic/character_8.png" alt="character8">
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <!-- <div class="actions">
+              <div class="ui black deny button">
+                Nope
+              </div>
+              <div class="ui positive right labeled icon button">
+                Yep, that's me
+                <i class="checkmark icon"></i>
+              </div>
+            </div> -->
+          </div>
+
+          <!-- logo design modal -->
+          <div class="ui modal graphicPfModal lgModal fullscreen coupled second">
+            <i class="close icon"></i>
+            <!-- <div class="header">
+              2번째 모달입니다.
+            </div> -->
+            <div class="content">
+                <!-- 2번째 모달 - 로고디자인 풀페이지 슬라이드 -->
+                <!-- Swiper -->
+                <div class="swiper lgSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./img/graphic/symbol_logo_1.png" alt="symbol logo1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/graphic/symbol_logo_2.png" alt="symbol logo2">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/graphic/symbol_logo_3.png" alt="symbol logo3">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/graphic/symbol_logo_4.png" alt="symbol logo4">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/graphic/symbol_logo_5.png" alt="symbol logo5">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/graphic/symbol_logo_6.png" alt="symbol logo6">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/graphic/symbol_logo_7.png" alt="symbol logo7">
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+              
+            </div>
+            <!-- <div class="actions">
+              <div class="ui black deny button">
+                Nope
+              </div>
+              <div class="ui positive right labeled icon button">
+                Yep, that's me
+                <i class="checkmark icon"></i>
+              </div>
+            </div> -->
+          </div>
+
+        <!-- package modal-->
+        <div class="ui modal graphicPfModal pkModal fullscreen coupled second">
+            <i class="close icon"></i>
+            <!-- <div class="header">
+              2번째 모달입니다.
+            </div> -->
+            <div class="content">
+                <!-- 2번째 모달 - 패키지디자인 풀페이지 슬라이드 -->
+                <!-- Swiper -->
+                <div class="swiper pkSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./img/graphic/package_1.png" alt="package1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/graphic/package_2.png" alt="package2">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/graphic/package_3.png" alt="package3">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/graphic/package_4.png" alt="package4">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/graphic/package_5.png" alt="package5">
+                        </div>
+                    </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+              
+            </div>
+            <!-- <div class="actions">
+              <div class="ui black deny button">
+                Nope
+              </div>
+              <div class="ui positive right labeled icon button">
+                Yep, that's me
+                <i class="checkmark icon"></i>
+              </div>
+            </div> -->
+          </div>
+
+        <!-- leaflet modal-->
+        <div class="ui modal graphicPfModal lflModal fullscreen coupled second">
+            <i class="close icon"></i>
+            <!-- <div class="header">
+              2번째 모달입니다.
+            </div> -->
+            <div class="content">
+                <!-- 2번째 모달 - 리플렛디자인 풀페이지 슬라이드 -->
+                <!-- Swiper -->
+                <div class="swiper lflSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./img/graphic/leaflet_1.png" alt="leaflet1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/graphic/leaflet_2.png" alt="leaflet2">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/graphic/leaflet_3.png" alt="leaflet3">
+                        </div>
+                    </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+              
+            </div>
+            <!-- <div class="actions">
+              <div class="ui black deny button">
+                Nope
+              </div>
+              <div class="ui positive right labeled icon button">
+                Yep, that's me
+                <i class="checkmark icon"></i>
+              </div>
+            </div> -->
+          </div>
+
+        <!-- advertisement modal-->
+        <div class="ui modal graphicPfModal advModal fullscreen coupled second">
+            <i class="close icon"></i>
+            <!-- <div class="header">
+              2번째 모달입니다.
+            </div> -->
+            <div class="content">
+                <!-- 2번째 모달 - 광고디자인 풀페이지 슬라이드 -->
+                <!-- Swiper -->
+                <div class="swiper advSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img src="./img/graphic/adv_1.png" alt="adv1">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="./img/graphic/adv_2.png" alt="adv2">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="./img/graphic/adv_3.png" alt="adv3">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="./img/graphic/adv_4.png" alt="adv4">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="./img/graphic/adv_5.png" alt="adv5">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="./img/graphic/adv_6.png" alt="adv6">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="./img/graphic/adv_7.png" alt="adv7">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="./img/graphic/adv_8.png" alt="adv8">
+                        </div>
+                    </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+              <!-- <div class="ui medium image">
+                <img src="/images/avatar/large/chris.jpg">
+              </div>
+              <div class="description">
+                <div class="ui header">We've auto-chosen a profile image for you.</div>
+                <p>We've grabbed the following image from the <a href="https://www.gravatar.com" target="_blank">gravatar</a> image associated with your registered e-mail address.</p>
+                <p>Is it okay to use this photo?</p>
+              </div> -->
+            </div>
+            <!-- <div class="actions">
+              <div class="ui black deny button">
+                Nope
+              </div>
+              <div class="ui positive right labeled icon button">
+                Yep, that's me
+                <i class="checkmark icon"></i>
+              </div>
+            </div> -->
+          </div>
+
+      <!-- etc. -->
+
+</body>
+
+<!-- external library -->
+<!-- jquery -->
+<!-- <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js" integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE=" crossorigin="anonymous"></script> -->
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+<!-- swiper js -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+<!-- jc js -->
+<script src="./script/app.js"></script>
+
+<!-- semantic ui -->
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.js"></script>
+
+</html>

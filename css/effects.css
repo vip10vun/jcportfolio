@@ -1,0 +1,371 @@
+@charset "utf-8";
+
+/* 첫페이지 애니메이션 */
+#logo,#logoTop, #logoBot {
+    transform: scale(0.85);
+}
+#logoTop path {
+    fill: #BFB9B9;
+    opacity: 0;
+    animation: textTop 0.8s ease-in-out forwards 2.8s;
+}
+#logoBot path {
+    fill: #797072;
+    opacity: 0;
+    animation: textBot 3s ease-in-out forwards 2.8s;
+}
+
+        #logo path:nth-child(1) {
+            stroke-dasharray: 572.33349609375px;
+            stroke-dashoffset: 572.33349609375px;
+            animation: logo-intro 1.4s ease-in-out forwards, fill 0.5s linear forwards 0.4s;
+           
+        }
+        #logo path:nth-child(2) {
+            stroke-dasharray: 630.315673828125px;
+            stroke-dashoffset: 630.315673828125px;
+            animation: logo-intro 1.4s ease-in-out forwards 0.3s, fill 0.5s linear forwards 0.8s;
+        }
+        #logo path:nth-child(3) {
+            stroke-dasharray: 684.3806762695312px;
+            stroke-dashoffset: 684.3806762695312px;
+            animation: logo-intro 1.4s ease-in-out forwards 0.6s, fill 0.5s linear forwards 1.2s;
+        }
+        #logo path:nth-child(4) {
+            stroke-dasharray: 456.8160400390625px;
+            stroke-dashoffset: 456.8160400390625px;
+            animation: logo-intro 1.4s ease-in-out forwards 0.9s, fill 0.5s linear forwards 1.6s;
+        }
+        #logo path:nth-child(5) {
+            stroke-dasharray: 530.4720458984375px;
+            stroke-dashoffset: 530.4720458984375px;
+            animation: logo-intro 1.4s ease-in-out forwards 1.2s, fill 0.5s linear forwards 2s;
+        }
+        #logo path:nth-child(6) {
+            stroke-dasharray: 630.316162109375px;
+            stroke-dashoffset: 630.316162109375px;
+            animation: logo-intro 1.4s ease-in-out forwards 1.5s, fill 0.5s linear forwards 2.4s;
+        }
+        #logo path:nth-child(7) {
+            stroke-dasharray: 415.1419677734375px;
+            stroke-dashoffset: 415.1419677734375px;
+            animation: logo-intro 1.4s ease-in-out forwards 1.8s, fill 0.5s linear forwards 2.8s;
+        }
+        #logo path:nth-child(8) {
+            stroke-dasharray: 450.115966796875px;
+            stroke-dashoffset: 450.115966796875px;
+            animation: logo-intro 1.4s ease-in-out forwards 2.1s, fill 0.5s linear forwards 3.2s;
+        }
+        #logo path:nth-child(9) {
+            stroke-dasharray: 630.3201904296875px;
+            stroke-dashoffset: 630.3201904296875px;
+            animation: logo-intro 1.4s ease-in-out forwards 2.4s, fill 0.5s linear forwards 3.6s;
+        }
+        /* .testBox {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            opacity: 0;
+            bottom: 10px;
+            right: 10px;
+            background: red;
+            animation: test 2s ease-in-out forwards 3.6s;
+            
+        } */
+        @keyframes logo-intro {
+            to {
+                stroke-dashoffset: 0%;
+            }
+        }
+        @keyframes fill {
+            from {
+                fill: transparent;
+            }
+            to {
+                fill: white;
+            }
+        }
+        @keyframes textTop {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes textBot {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+
+
+
+/* 포트폴리오 페이지 원 3개 호버 이펙트 */
+.card {
+    position: relative;
+    width: 286px;
+    height: 286px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    background: transparent;
+    transition-delay: 0.5s;
+}
+
+.card:hover {
+    width: 450px;
+    transition-delay: 0.5s;
+}
+
+.card .circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .circle::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    background: #242121;
+    border: 8px solid var(--clr);
+    filter: drop-shadow(0 0 2px var(--clr)) drop-shadow(0 0 10px var(--clr));
+    transition: 0.5s, background 0.5s;
+    transition-delay: 0.75s,1s;
+}
+
+.card:hover .circle::before {
+    transition-delay: 0.5s;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background: var(--clr);
+}
+.card .circle .logo {
+    position: relative;
+    width: 100%;
+    font-size: 3rem;
+    color: #fff;
+    
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+.card:hover .circle .logo {
+    transform: scale(0);
+    transition-delay: 0s;
+}
+.card .product_img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0) rotate(315deg);
+    height: 400px;
+    transition: 0.5s ease-in-out;
+}
+.card:hover .web_img {
+    transition-delay: 0.75s;
+    top: 35%;
+    left: 80%;
+    width: 250px;
+    height: fit-content;
+    transform: translate(-50%, -50%) scale(1) rotate(0deg);
+}
+.card:hover .video_img {
+    transition-delay: 0.75s;
+    top: 50%;
+    left: 79%;
+    height: 500px;
+    transform: translate(-50%, -50%) scale(1) rotate(15deg);
+}
+.card:hover .graphic_img {
+    transition-delay: 0.75s;
+    width: 200px;
+    height: fit-content;
+    top: 55%;
+    left: 77%;
+    transform: translate(-50%, -50%) scale(1) rotate(0deg);
+}
+.card .circleContent {
+    position: absolute;
+    width: 50%;
+    left: 20%;
+    padding: 20px 20px 20px 8px;
+    opacity: 0;
+    transition: 0.5s;
+    visibility: hidden;
+}
+.card:hover .circleContent {
+    transition-delay: 0.75s;
+    opacity: 1;
+    visibility: visible;
+    left: 20px;
+}
+.card .circleContent h2 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    line-height: 1em;
+    margin: 18px 0;
+}
+.card .circleContent p {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 18px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.card .circleContent a {
+    position: relative;
+    color: #111;
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+
+
+
+/* 6개 그래픽 카드 호버 이펙트 */
+.gWrap {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px 0;
+}
+.gContainer {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.box {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    background: rgba(0,0,0,0.5);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box::before,
+.box::after {
+    content: '';
+    position: absolute;
+    background: linear-gradient(315deg, #333333, #0C0C0C);
+    /* inset: -80px 100px; */
+    inset: -153px 174px;
+    transition: 0.5s;
+    filter: hue-rotate(calc(var(--i) * 120deg));
+    animation: cardani 8s linear infinite;
+}
+.box::after {
+    background: linear-gradient(315deg, #252222, #BC2649);
+    filter: hue-rotate(calc(var(--i) * 120deg));
+    animation-delay: -4s;
+}
+.box:hover::before,
+.box:hover::after {
+    animation-play-state: paused;
+    /* inset: -80px 80px; */
+    inset: -153px 154px;
+}
+@keyframes cardani {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.box i {
+    position: absolute;
+    inset: 3px;
+    background: #fff;
+    z-index: 1;
+}
+
+.box .subContent {
+    position: absolute;
+    inset: 20px;
+    /* background: #0d112c; */
+    background: #0d112c;
+    border: 3px solid #070c23;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    background-size: cover;
+}
+.box .subContent img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+    pointer-events: none;
+    z-index: 3;
+}
+.box:hover .subContent img {
+    opacity: 0;
+}
+.box .subContent h2 {
+    position: relative;
+    z-index: 2;
+    font-size: 1.25em;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    line-height: 1.25em;
+    text-transform: uppercase;
+}
+.box .subContent h2 span {
+    font-weight: 300;
+    font-size: 0.75em;
+}
+.box .subContent a {
+    position: relative;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #fff;
+    color: #070a1c;
+    border-radius: 25px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.box .subContent a:hover {
+    letter-spacing: 0.2em;
+}
