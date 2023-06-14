@@ -179,32 +179,26 @@
     height: 400px;
     transition: 0.5s ease-in-out;
 }
-.card:hover .web_img {
+.card:hover img {
+
     transition-delay: 0.75s;
-    top: 35%;
-    left: 80%;
-    width: 250px;
+    top: 62%;
+    left: 77%;
+    width: 300px;
     height: fit-content;
     transform: translate(-50%, -50%) scale(1) rotate(0deg);
+    opacity: .3;
+}
+.card:hover .web_img {
 }
 .card:hover .video_img {
-    transition-delay: 0.75s;
-    top: 50%;
-    left: 79%;
-    height: 500px;
-    transform: translate(-50%, -50%) scale(1) rotate(15deg);
 }
 .card:hover .graphic_img {
-    transition-delay: 0.75s;
-    width: 200px;
-    height: fit-content;
-    top: 55%;
-    left: 77%;
-    transform: translate(-50%, -50%) scale(1) rotate(0deg);
 }
+
 .card .circleContent {
     position: absolute;
-    width: 50%;
+    width: 100%;
     left: 20%;
     padding: 20px 20px 20px 8px;
     opacity: 0;
@@ -212,34 +206,57 @@
     visibility: hidden;
 }
 .card:hover .circleContent {
+    width: 100%;
+    height: 100%;
     transition-delay: 0.75s;
     opacity: 1;
     visibility: visible;
-    left: 20px;
+    left: -11px;
+    top: 0;
 }
 .card .circleContent h2 {
+    position: relative;
+    text-align: left;
+    margin-left: 36px !important;
     color: #fff;
     text-transform: uppercase;
     font-size: 2.5em;
     line-height: 1em;
     margin: 18px 0;
 }
+.card .circleContent h2::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 140%;
+    width: 50px;
+    height: 4px;
+    background-color: white;
+
+}
 .card .circleContent p {
+    text-align: left;
+    margin-left: 36px;
+    margin-top: 38px;
     color: #fff;
     font-size: 18px;
     margin-bottom: 18px;
     font-family: 'Noto Sans KR', sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 .card .circleContent a {
-    position: relative;
-    color: #111;
+    position: absolute;
+    bottom: 19%;
+    left: 48px;
+    color: #BC2649;
     background: #fff;
     padding: 10px 20px;
     border-radius: 10px;
     display: inline-block;
     text-decoration: none;
     font-weight: 800;
-    margin-top: 10px;
+    font-size: 1.3rem;
 }
 
 
@@ -368,4 +385,211 @@
 
 .box .subContent a:hover {
     letter-spacing: 0.2em;
+}
+
+
+
+
+@media only screen and (max-width: 1024px) {
+    .wholeWrap .innerWrap {
+        width: calc(100% - 40px);
+        height: calc(100% - 40px);
+        border-radius: 22px;
+    }
+    .swiper .topNavWrap {
+        height: 120px;
+    }
+    .swiper .topNavWrap .logo {
+        width: 150px;
+    }
+    .swiper .topNavWrap .logo img {
+        width: 150px;
+    }
+    .swiper .swiper-wrapper .swiper-slide.main_slide_1 .pfIntro {
+        transform: scale(0.9);
+    }
+    .swiper .swiper-wrapper .swiper-slide.main_slide_2 .aboutContainer .title_group .slideText,
+    .swiper .swiper-wrapper .swiper-slide.main_slide_3 .pfContainer .title_group .slideText, 
+    .swiper .swiper-wrapper .swiper-slide.main_slide_4 .contactContainer .title_group .slideText {
+        width: 100%;
+        height: 80%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        font-size: 36px;
+        padding-left: 87px;
+    }
+    .swiper .swiper-wrapper .swiper-slide.main_slide_2 .aboutContainer .title_group .slideText span::before, 
+    .swiper .swiper-wrapper .swiper-slide.main_slide_3 .pfContainer .title_group .slideText span::before, 
+    .swiper .swiper-wrapper .swiper-slide.main_slide_4 .contactContainer .title_group .slideText span::before {
+        top: 50%;
+        left: -165px;
+        width: 132px;
+    }
+
+    .swiper .swiper-wrapper .swiper-slide.main_slide_2 .aboutContainer .slideContent .aboutPanelWrap {
+        padding-top: 20px;
+    }
+    
+    .swiper .swiper-wrapper .swiper-slide.main_slide_2 .aboutContainer .slideContent .aboutPanelWrap .aboutTopPanel .leftAbout {
+        width: 60%;
+    }
+    .swiper .swiper-wrapper .swiper-slide.main_slide_2 .aboutContainer .slideContent .aboutPanelWrap .aboutTopPanel .rightAbout {
+        width: 40%;
+    }
+
+    .swiper .swiper-wrapper .swiper-slide.main_slide_2 .aboutContainer .slideContent .aboutPanelWrap .aboutTopPanel .leftAbout .myName {
+        font-size: 2.7em;
+        padding: 24px 0;
+    }
+    .swiper .swiper-wrapper .swiper-slide.main_slide_2 .aboutContainer .slideContent .aboutPanelWrap .aboutTopPanel .leftAbout .pobu {
+        font-size: 14px;
+        padding: 0;
+    }
+    .swiper .swiper-wrapper .swiper-slide.main_slide_2 .aboutContainer .slideContent .aboutPanelWrap .aboutTopPanel .leftAbout .pobu span {
+        margin: 6px;
+    }
+    .swiper .swiper-wrapper .swiper-slide.main_slide_2 .aboutContainer .slideContent .aboutPanelWrap .aboutTopPanel .leftAbout .aboutBtnWrap .aboutBtn {
+        width: 100px;
+        font-size: 1rem;
+    }
+    .swiper .swiper-wrapper .swiper-slide.main_slide_2 .aboutContainer .slideContent .aboutPanelWrap .aboutTopPanel .rightAbout .imgCircle {
+        width: 250px;
+        height: 250px;
+    }
+    .swiper .swiper-wrapper .swiper-slide.main_slide_2 .aboutContainer .slideContent .aboutPanelWrap .aboutBotPanel {
+        margin-top: 20px;
+    }
+
+    .swiper .swiper-wrapper .swiper-slide.main_slide_2 .aboutContainer .slideContent .aboutPanelWrap .aboutBotPanel .aBox {
+        max-width: 100px;
+        border-radius: 5px;
+        padding: 8px;
+    }
+    .swiper .swiper-wrapper .swiper-slide.main_slide_2 .aboutContainer .slideContent .aboutPanelWrap .aboutBotPanel .aBoxWrap {
+        gap: 0 20px;
+    }
+    
+
+    .swiper .swiper-wrapper .swiper-slide.main_slide_2 .aboutContainer .slideContent .aboutPanelWrap .aboutBotPanel h4 {
+        font-size: 12px;
+    }
+
+    .swiper .swiper-wrapper .swiper-slide.main_slide_2 .aboutContainer .slideContent .aboutPanelWrap .aboutBotPanel .aBox .aIcon img {
+        width: 20px;
+    }
+    .swiper .swiper-wrapper .swiper-slide.main_slide_2 .aboutContainer .slideContent .aboutPanelWrap .aboutBotPanel .aBox .aText {
+        font-size: 12px;
+    }
+
+    .wholeWrap .innerWrap .rightBottomPoint {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* card hover */
+    .card {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s;
+        background: transparent;
+        transition-delay: 0.5s;
+    }
+    
+    .card:hover {
+        width: 350px;
+        transition-delay: 0.5s;
+    }
+
+    .card .circle::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background: #242121;
+        border: 8px solid var(--clr);
+        filter: drop-shadow(0 0 2px var(--clr)) drop-shadow(0 0 10px var(--clr));
+        transition: 0.5s, background 0.5s;
+        transition-delay: 0.75s,1s;
+    }
+
+    .card:hover img {
+
+        transition-delay: 0.75s;
+        top: 62%;
+        left: 77%;
+        width: 200px;
+        height: fit-content;
+        transform: translate(-50%, -50%) scale(1) rotate(0deg);
+        opacity: .3;
+    }
+
+    /* portfolio slide page */
+    .swiper .swiper-wrapper .swiper-slide.main_slide_3 .pfContainer .slideContent .ccWrap {
+        display: none;
+    }
+
+
+
+    /* contact slide page */
+    .swiper .swiper-wrapper .swiper-slide.main_slide_4 .contactContainer .slideContent .ccWrap {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .swiper .swiper-wrapper .swiper-slide.main_slide_4 .contactContainer .slideContent .ccWrap .contactBox .contactIcon img {
+        width: 35px;
+    }
+    .swiper .swiper-wrapper .swiper-slide.main_slide_4 .contactContainer .slideContent .ccWrap .contactBox .contactIcon::after {
+        height: 40px;
+    }
+    .swiper .swiper-wrapper .swiper-slide.main_slide_4 .contactContainer .slideContent .ccWrap .contactBox .contactDetailWrap .detailTitle {
+        padding-bottom: 0;
+        font-size: 14px;
+    }
+    .swiper .swiper-wrapper .swiper-slide.main_slide_4 .contactContainer .slideContent .ccWrap .contactBox .contactDetailWrap .detailContent {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .wholeWrap .innerWrap {
+        width: calc(100% - 16px);
+        height: calc(100% - 16px);
+        border-radius: 12px;
+        
+    }
+    .swiper .swiper-wrapper .swiper-slide.main_slide_1 .pfIntro {
+        margin-top: 0;
+        height: 33%;
+    }
+    .swiper-pagination-vertical.swiper-pagination-bullets, .swiper-vertical>.swiper-pagination-bullets {
+        top: 85% !important;
+        right: -18px !important;
+    }
+    .swiper .topNavWrap {
+        height: 100px;
+        padding: 22px;
+    }
+    .swiper .topNavWrap .logo {
+        width: 120px;
+    }
+    .swiper .topNavWrap .logo img {
+        width: 120px;
+    }
+    .swiper .swiper-wrapper .swiper-slide.main_slide_4 .contactContainer .slideContent .ccWrap {
+        flex-direction: column;
+    }
+    .wholeWrap .innerWrap .rightBottomPoint {
+        width: 25px;
+        height: 25px;
+    }
 }
