@@ -119,7 +119,7 @@
                                        
                                     </div>
                                     <div class="aboutBtnWrap">
-                                      <button class="ui button youtube aboutBtn">More Details ></button>
+                                      <button class="ui button youtube aboutBtn" id="downloadButton">More Details ></button>
                                     </div>
                                   </div>
                                   <div class="rightAbout">
@@ -165,6 +165,14 @@
                                       <div class="aText">VS CODE</div>
                                     </div>
                                   </div>
+                                  <div class="aBoxWrapMobile">
+                                    <img src="./img/icon/ps_icon.png" alt="">
+                                    <img src="./img/icon/ai_icon.png" alt="">
+                                    <img src="./img/icon/pr_icon.png" alt="">
+                                    <img src="./img/icon/ae_icon.png" alt="">
+                                    <img src="./img/icon/github_icon2.png" alt="">
+                                    <img src="./img/icon/vs_icon.png" alt="">
+                                  </div>
                                 </div>
                               </div>
                                 
@@ -188,11 +196,12 @@
                                           <div class="circleContent">
                                               <h2>WEB DESIGN</h2>
                                               <p>
-                                                 반응형 웹 디자인 포트폴리오
+                                                <span>반응형 웹 디자인</span>
+                                                <span>PORTFOLIO</span>
                                               </p>
                                               <a href="#" class="wc">보러가기</a>
                                           </div>
-                                          <img src="./img/web_img.png" alt="web1" class="web_img product_img">
+                                          <img src="./img/hover_card_web.png" alt="web1" class="web_img product_img">
                                       </div>
                                     </div>
                                     <div class="pfBox pfVideo">
@@ -205,11 +214,12 @@
                                           <div class="circleContent">
                                               <h2>VIDEO PRODUCT.</h2>
                                               <p>
-                                                 Pr, Ae 영상 포트폴리오
+                                                 <span>프리미어, 애펙</span>
+                                                 <span>PORTFOLIO</span>
                                               </p>
                                               <a href="#" class="vc">보러가기</a>
                                           </div>
-                                          <img src="./img/video_img.png" alt="video" class="video_img product_img">
+                                          <img src="./img/hover_card_video.png" alt="video" class="video_img product_img">
                                       </div>
                                     </div>
                                     <div class="pfBox pfGraphic">
@@ -222,13 +232,52 @@
                                           <div class="circleContent">
                                               <h2>GRAPHIC DESIGN</h2>
                                               <p>
-                                                포토샵, 일러스트 포트폴리오
+                                                <span>포토샵, 일러스트</span>
+                                                <span>PORTFOLIO</span>
                                               </p>
                                               <a href="#" class="gc">보러가기</a>
                                           </div>
-                                          <img src="./img/graphic_img.png" alt="graphic" class="graphic_img product_img">
+                                          <img src="./img/hover_card_graphic.png" alt="graphic" class="graphic_img product_img">
                                       </div>
                                     </div>
+                                </div>
+                                <div class="ccWrapMobile">
+                                  <div class="pfBoxMobile pfWebMobile">
+                                    <div class="circleMobile">
+                                      <span></span>
+                                      <span></span>
+                                      <!-- <span></span> -->
+                                      <div class="cmContent">
+                                        <h3>WEB</h3>
+                                        <!-- <button class="ui inverted basic button wc">More Detail</button> -->
+                                        <a href="#" class="wc" style="color:#fff">More Detail ></a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="pfBoxMobile pfVideoMobile">
+                                    <div class="circleMobile">
+                                      <span></span>
+                                      <span></span>
+                                      <!-- <span></span> -->
+                                      <div class="cmContent">
+                                        <h3>VIDEO</h3>
+                                        <!-- <button class="ui inverted basic button vc">More Detail</button> -->
+                                        <a href="#" class="vc" style="color:#fff">More Detail ></a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="pfBoxMobile pfGraphicMobile">
+                                    <div class="circleMobile">
+                                      <span></span>
+                                      <span></span>
+                                      <!-- <span></span> -->
+                                      <div class="cmContent">
+                                        <h3>GRAPHIC</h3>
+                                        <!-- <button class="ui inverted basic button gc">More Detail</button> -->
+                                        <a href="#" class="gc" style="color:#fff">More Detail ></a>
+                                      </div>
+                                    </div>
+                                  </div>
                                 </div>
                             </div>
                         </div>
@@ -348,8 +397,7 @@
                 <p>JC BRAND SITE</p>
                 <span>JC 로고를 이용한 휠스크롤 브랜딩 사이트</span>
                 <div class="resBtnWrap">
-                  <button class="ui button basic gray siteBtn" onclick="window.open('http://jcportfolio.dothome.co.kr/jcbrand')">사이트</button>
-                  <button class="ui button basic gray figmaBtn">피그마</button>
+                  <button class="ui button vk siteBtn" onclick="window.open('http://jcportfolio.dothome.co.kr/jcbrand')">Web Site</button>
                 </div>
               </div>
               <div class="responWeb responWeb2">
@@ -359,8 +407,7 @@
                 <p>WEB DASHBOARD</p>
                 <span>벡스코 수산 전시회용 웹대시보드</span>
                 <div class="resBtnWrap">
-                  <button class="ui button basic gray siteBtn" onclick="window.open('http://jcportfolio.dothome.co.kr/kumhotemp')">사이트</button>
-                  <button class="ui button basic gray figmaBtn">깃허브</button>
+                  <button class="ui button vk siteBtn" onclick="window.open('http://jcportfolio.dothome.co.kr/kumhotemp')">Web Site</button>
                 </div>
               </div>
               <div class="responWeb responWeb3">
@@ -370,8 +417,7 @@
                 <p>RESPONSIVE PORTFOILO</p>
                 <span>항만터미널 야드트럭 위치추적용 반응형 웹앱</span>
                 <div class="resBtnWrap">
-                  <button class="ui button basic gray siteBtn" onclick="window.open('http://jcportfolio.dothome.co.kr/totaltemp')">사이트</button>
-                  <button class="ui button basic gray figmaBtn">깃허브</button>
+                  <button class="ui button vk siteBtn" onclick="window.open('http://jcportfolio.dothome.co.kr/totaltemp')">Web Site</button>
                 </div>
               </div>
             </div>
@@ -412,7 +458,7 @@
             </div>
             <div class="selectWrap">
               <div class="ui vertical buttons videoSelectBtns">
-                <button class="ui button black videoSelectBtn active jc_introduction_btn">자기소개 타이포그래피</button>
+                <button class="ui button vk videoSelectBtn active jc_introduction_btn">자기소개 타이포그래피</button>
                 <button class="ui button videoSelectBtn jack_daniel_btn">잭다니엘 광고</button>
                 <button class="ui button videoSelectBtn jc_vlog_btn">V-Log by VLLO App.</button>
               </div>
@@ -508,12 +554,63 @@
                         <h2>ADVERT. DESIGN<br><span>GRAPHIC DESIGN</span></h2>
                         <!-- <a href="#">바로가기</a> -->
                         <button class="ui primary button cardBtn advBtn">광고디자인</button>
-
                     </div>
                 </div>
             </div>
-        </div>
+          </div>
 
+          <div class="gWrapMobile">
+            <div class="gContainerMobile">
+              <div class="boxMobile">
+                <i></i>
+                <div class="subContent">
+                  <h4>아이소메트릭<br><span>GRAPHIC DESIGN</span></h4>
+                  <!-- <a href="#">바로가기</a> -->
+                  <button class="ui primary button cardBtn isoBtn">보러가기</button>
+                </div>
+              </div>
+              <div class="boxMobile">
+                <i></i>
+                <div class="subContent">
+                  <h4>캐릭터 디자인<br><span>GRAPHIC DESIGN</span></h4>
+                  <!-- <a href="#">바로가기</a> -->
+                  <button class="ui primary button cardBtn chaBtn">보러가기</button>
+                </div>
+              </div>
+              <div class="boxMobile">
+                <i></i>
+                <div class="subContent">
+                  <h4>로고 디자인<br><span>GRAPHIC DESIGN</span></h4>
+                  <!-- <a href="#">바로가기</a> -->
+                  <button class="ui primary button cardBtn lgBtn">보러가기</button>
+                </div>
+              </div>
+              <div class="boxMobile">
+                <i></i>
+                <div class="subContent">
+                  <h4>패키지 디자인<br><span>GRAPHIC DESIGN</span></h4>
+                  <!-- <a href="#">바로가기</a> -->
+                  <button class="ui primary button cardBtn pkBtn">보러가기</button>
+                </div>
+              </div>
+              <div class="boxMobile">
+                <i></i>
+                <div class="subContent">
+                  <h4>리플렛 디자인<br><span>GRAPHIC DESIGN</span></h4>
+                  <!-- <a href="#">바로가기</a> -->
+                  <button class="ui primary button cardBtn lflBtn">보러가기</button>
+                </div>
+              </div>
+              <div class="boxMobile">
+                <i></i>
+                <div class="subContent">
+                  <h4>광고 디자인<br><span>GRAPHIC DESIGN</span></h4>
+                  <!-- <a href="#">바로가기</a> -->
+                  <button class="ui primary button cardBtn advBtn">보러가기</button>
+                </div>
+              </div>
+            </div>
+          </div>
             
           
         </div>

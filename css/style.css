@@ -331,6 +331,10 @@ font-family: 'Noto Sans KR', sans-serif;
     display: flex;
     gap: 0 40px;
 }
+.swiper .swiper-wrapper .swiper-slide.main_slide_2 .aboutContainer .slideContent .aboutPanelWrap .aboutBotPanel .aBoxWrapMobile {
+    display: none;
+
+}
 .swiper .swiper-wrapper .swiper-slide.main_slide_2 .aboutContainer .slideContent .aboutPanelWrap .aboutBotPanel .aBox {
     max-width: 173px;
     width: fit-content;
@@ -368,6 +372,9 @@ font-family: 'Noto Sans KR', sans-serif;
 .swiper .swiper-wrapper .swiper-slide.main_slide_4 .contactContainer .slideContent .ccWrap {
     margin-top: -50px;
     margin-left: 10%;
+}
+.swiper .swiper-wrapper .swiper-slide.main_slide_3 .pfContainer .slideContent .ccWrapMobile {
+ display: none;       
 }
 
 .swiper .swiper-wrapper .swiper-slide.main_slide_3 .pfContainer .slideContent .ccWrap .pfBox {
@@ -551,6 +558,7 @@ font-family: 'Noto Sans KR', sans-serif;
     color: #5D5D5D;
     font-size: 2.2rem;
     /* font-weight: bold; */
+    margin: 0;
 }
 .ui.fullscreen.modal.webPfModal .wdWrap .responWeb span {
     color: #8b8888;
@@ -598,10 +606,14 @@ font-family: 'Noto Sans KR', sans-serif;
     margin-top: 54px;
 }
 
+.ui.fullscreen.modal.graphicPfModal.first .content .gWrapMobile {
+    display: none;
+}
+
 .ui.fullscreen.modal.graphicPfModal.second {
     /* width: 80% !important;
     height: 80% !important; */
-    background-color: red;
+    /* background-color: red; */
 }
 .ui.fullscreen.modal.graphicPfModal.second .content {
     display: flex;
