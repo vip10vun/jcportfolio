@@ -101,7 +101,7 @@ font-family: 'Noto Sans KR', sans-serif;
                 inset -7px -7px 14px #413a3a; */
 }
 
-.swiper .topNavWrap .logo::after {
+/* .swiper .topNavWrap .logo::after {
     content: '';
     position: absolute;
     top: 50%;
@@ -109,7 +109,7 @@ font-family: 'Noto Sans KR', sans-serif;
     width: 1920px;
     height: 3px;
     background: linear-gradient(to right, transparent 80%, white 20%);
-}
+} */
 
 .swiper .topNavWrap .logo img { 
     width: 188px;
@@ -698,6 +698,20 @@ font-family: 'Noto Sans KR', sans-serif;
     
 }
 
+
+.swiper .topNavWrap .toggleWrap {
+    /* border: 1px solid white; */
+    position: absolute;
+    right: 0;
+    top: 0;
+    box-sizing: border-box;
+    margin: 28px 0;
+}
+
+
+.ui.toggle.checkbox input:checked~.box:before, .ui.toggle.checkbox input:checked~label:before {
+    background-color: #BC2649 !important;
+}
 
 
 
