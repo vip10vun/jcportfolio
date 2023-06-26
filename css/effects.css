@@ -391,9 +391,9 @@
 
 
 @media only screen and (max-width: 1024px) {
-    .swiper .topNavWrap .logo::after {
+    /* .swiper .topNavWrap .logo::after {
         display: none !important;
-    }
+    } */
     .wholeWrap .innerWrap {
         width: calc(100% - 40px);
         height: calc(100% - 40px);
@@ -969,7 +969,14 @@
         font-size: 14px !important;
     }
 
-    
+    .swiper .topNavWrap .toggleWrap {
+        /* border: 1px solid white; */
+        position: absolute;
+        right: 0;
+        top: 0;
+        box-sizing: border-box;
+        margin: 28px 0;
+    }
 }
 
 

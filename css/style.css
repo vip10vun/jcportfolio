@@ -705,13 +705,11 @@ font-family: 'Noto Sans KR', sans-serif;
     right: 0;
     top: 0;
     box-sizing: border-box;
-    margin: 28px 0;
+    margin: 48px 24px;
 }
 
 
-.ui.toggle.checkbox input:checked~.box:before, .ui.toggle.checkbox input:checked~label:before {
-    background-color: #BC2649 !important;
-}
+
 
 
 
