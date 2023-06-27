@@ -175,7 +175,7 @@ $('.toggleWrap .checkbox')
   .first().checkbox({
     onChecked: function() {
       // console.log("체크됨");
-      $('.swiper .swiper-wrapper .swiper-slide.main_slide_1').css('background-image', 'url(../img/main_wh.png)');
+      $('.swiper .swiper-wrapper .swiper-slide.main_slide_1').css('background-image', 'url(img/main_wh.png)');
       
       $('.swiper .topNavWrap .logo img').css('filter', 'contrast(0)');
       $('.pfTextMid #logo').css('filter', 'contrast(0)');
@@ -217,7 +217,7 @@ $('.toggleWrap .checkbox')
     },
     onUnchecked: function() {
       // console.log("체크 안됨");
-      $('.swiper .swiper-wrapper .swiper-slide.main_slide_1').css('background-image', 'url(../img/main_bg.png)');
+      $('.swiper .swiper-wrapper .swiper-slide.main_slide_1').css('background-image', 'url(img/main_bg.png)');
       $('.swiper .topNavWrap .logo img').css('filter', 'contrast(1)');
       $('.pfTextMid #logo').css('filter', 'contrast(1)');
       $('.swiper').css('background-color', '#242121');
