@@ -91,7 +91,20 @@ $(function() {
         keyboard: true,
       });
 
-      
+      // download pdf file click event
+      $('#downloadButton').on('click', function() {
+        var fileUrl = "../resouce/Lee.pdf";
+        var fileName = "jc_inf.pdf";
+        var element = document.createElement("a");
+        element.setAttribute("href", fileUrl);
+        element.setAttribute("download", fileName);
+        element.style.display = "none";
+        document.body.appendChild(element);
+        element.click();
+        document.body.removeChild(element);
+      });
+
+
 
       
 
@@ -156,5 +169,97 @@ $(function() {
       .modal('show');
     });
 
+
+$('.toggleWrap .checkbox')
+  .checkbox()
+  .first().checkbox({
+    onChecked: function() {
+      // console.log("체크됨");
+      $('.swiper .swiper-wrapper .swiper-slide.main_slide_1').css('background-image', 'url(../img/main_wh.png)');
+      
+      $('.swiper .topNavWrap .logo img').css('filter', 'contrast(0)');
+      $('.pfTextMid #logo').css('filter', 'contrast(0)');
+      $('.swiper').css('background-color', '#fff');
+
+      $('.swiper .swiper-wrapper .swiper-slide.main_slide_2 .aboutContainer .slideContent .aboutPanelWrap .aboutBotPanel .aBoxWrapMobile').css('filter', 'contrast(0)');
+      $('.swiper .swiper-wrapper .swiper-slide.main_slide_2 .aboutContainer .slideContent .aboutPanelWrap .aboutBotPanel h4').css('color', '#808080');
+      $('.swiper .swiper-wrapper .swiper-slide.main_slide_2 .aboutContainer .slideContent .aboutPanelWrap .aboutTopPanel .leftAbout .myName').css('color', '#808080');
+
+      
+      $('.swiper .swiper-wrapper .swiper-slide.main_slide_2 .aboutContainer .title_group .slideText span::before').css('filter', 'contrast(0)');
+      $('.swiper .swiper-wrapper .swiper-slide.main_slide_2 .aboutContainer .title_group .slideText span').css('filter', 'contrast(0)');
+      
+      $('.swiper .swiper-wrapper .swiper-slide.main_slide_3 .pfContainer .title_group .slideText span').css('filter', 'contrast(0)');
+      $('.swiper .swiper-wrapper .swiper-slide.main_slide_3 .pfContainer .title_group .slideText span::before').css('filter', 'contrast(0)');
+
+      $('.swiper .swiper-wrapper .swiper-slide.main_slide_3 .pfContainer .slideContent .ccWrapMobile .pfBoxMobile .circleMobile span').css('border', '1px solid #808080');
+      $('.swiper .swiper-wrapper .swiper-slide.main_slide_3 .pfContainer .slideContent .ccWrapMobile .pfBoxMobile .circleMobile .cmContent h3').css('color', '#808080');
+      $('.swiper .swiper-wrapper .swiper-slide.main_slide_3 .pfContainer .slideContent .ccWrapMobile .pfBoxMobile .circleMobile .cmContent a').css('color', '#808080');
+      
+      $('.swiper .swiper-wrapper .swiper-slide.main_slide_4 .contactContainer .title_group .slideText span::before').css('filter', 'contrast(0)');
+      $('.swiper .swiper-wrapper .swiper-slide.main_slide_4 .contactContainer .title_group .slideText span').css('filter', 'contrast(0)');
+
+      $('.swiper .swiper-wrapper .swiper-slide.main_slide_4 .contactContainer .slideContent .ccWrap').css('filter', 'contrast(0)');
+
+      
+      // PC만
+      $('.card .cb').css('background', '#fff');
+      $('.card .circle .logo').css('color', '#808080');
+      
+      $('.card .product_img').css('filter', 'contrast(0)');
+      $('.card .circleContent h2').css('color', '#808080');
+      $('.card .circleContent p').css('color', '#808080');
+      $('.card .circleContent a').css({'background':'#D9D9D9' , 'color': 'white'});
+
+      $('.swiper .swiper-wrapper .swiper-slide.main_slide_2 .aboutContainer .slideContent .aboutPanelWrap .aboutTopPanel .leftAbout .pobu span').css('color', '#808080');
+      $('.swiper .swiper-wrapper .swiper-slide.main_slide_2 .aboutContainer .slideContent .aboutPanelWrap .aboutBotPanel').css('filter', 'contrast(0)');
+
+    },
+    onUnchecked: function() {
+      // console.log("체크 안됨");
+      $('.swiper .swiper-wrapper .swiper-slide.main_slide_1').css('background-image', 'url(../img/main_bg.png)');
+      $('.swiper .topNavWrap .logo img').css('filter', 'contrast(1)');
+      $('.pfTextMid #logo').css('filter', 'contrast(1)');
+      $('.swiper').css('background-color', '#242121');
+      $('.swiper .swiper-wrapper .swiper-slide.main_slide_2 .aboutContainer .slideContent .aboutPanelWrap .aboutBotPanel .aBoxWrapMobile').css('filter', 'contrast(1)');
+      $('.swiper .swiper-wrapper .swiper-slide.main_slide_2 .aboutContainer .slideContent .aboutPanelWrap .aboutBotPanel h4').css('color', 'white');
+      $('.swiper .swiper-wrapper .swiper-slide.main_slide_2 .aboutContainer .slideContent .aboutPanelWrap .aboutTopPanel .leftAbout .myName').css('color', 'white');
+
+      
+      
+      $('.swiper .swiper-wrapper .swiper-slide.main_slide_2 .aboutContainer .title_group .slideText span::before').css('filter', 'contrast(1)');
+      $('.swiper .swiper-wrapper .swiper-slide.main_slide_2 .aboutContainer .title_group .slideText span').css('filter', 'contrast(1)');
+      
+      $('.swiper .swiper-wrapper .swiper-slide.main_slide_3 .pfContainer .title_group .slideText span').css('filter', 'contrast(1)');
+      $('.swiper .swiper-wrapper .swiper-slide.main_slide_3 .pfContainer .title_group .slideText span::before').css('filter', 'contrast(1)');
+
+      $('.swiper .swiper-wrapper .swiper-slide.main_slide_3 .pfContainer .slideContent .ccWrapMobile .pfBoxMobile .circleMobile span').css('border', '1px solid white');
+      $('.swiper .swiper-wrapper .swiper-slide.main_slide_3 .pfContainer .slideContent .ccWrapMobile .pfBoxMobile .circleMobile .cmContent h3').css('color', 'white');
+      $('.swiper .swiper-wrapper .swiper-slide.main_slide_3 .pfContainer .slideContent .ccWrapMobile .pfBoxMobile .circleMobile .cmContent a').css('color', 'white');
+
+      $('.swiper .swiper-wrapper .swiper-slide.main_slide_4 .contactContainer .title_group .slideText span::before').css('filter', 'contrast(1)');
+      $('.swiper .swiper-wrapper .swiper-slide.main_slide_4 .contactContainer .title_group .slideText span').css('filter', 'contrast(1)');
+
+      $('.swiper .swiper-wrapper .swiper-slide.main_slide_4 .contactContainer .slideContent .ccWrap').css('filter', 'contrast(1)');
+
+      // PC만
+      $('.card .cb').css('background', '#242121');
+      $('.card .circle .logo').css('color', '#fff');
+
+      $('.card .product_img').css('filter', 'contrast(1)');
+      $('.card .circleContent h2').css('color', 'white');
+      $('.card .circleContent p').css('color', 'white');
+      $('.card .circleContent a').css({'background':'white' , 'color': '#BC2649'});
+
+
+      $('.swiper .swiper-wrapper .swiper-slide.main_slide_2 .aboutContainer .slideContent .aboutPanelWrap .aboutTopPanel .leftAbout .pobu span').css('color', 'white');
+      $('.swiper .swiper-wrapper .swiper-slide.main_slide_2 .aboutContainer .slideContent .aboutPanelWrap .aboutBotPanel').css('filter', 'contrast(1)');
+    },
+    onChange: function() {
+      // console.log("변화됨");
+    }
+  })
+;
+    
 
 });
