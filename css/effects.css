@@ -655,6 +655,7 @@
     }
     .ui.fullscreen.modal.videoPfModal .content .vpWrap .screenWrap {
         width: 100%;
+        height: fit-content;
     }
     .ui.fullscreen.modal.videoPfModal .content .vpWrap .selectWrap {
         width: 100%;

@@ -179,7 +179,7 @@ $('.toggleWrap .checkbox')
       
       $('.swiper .topNavWrap .logo img').css('filter', 'contrast(0)');
       $('.pfTextMid #logo').css('filter', 'contrast(0)');
-      $('.swiper').css('background-color', '#fff');
+      $('.swiper.mySwiper').css('background-color', '#fff');
 
       $('.swiper .swiper-wrapper .swiper-slide.main_slide_2 .aboutContainer .slideContent .aboutPanelWrap .aboutBotPanel .aBoxWrapMobile').css('filter', 'contrast(0)');
       $('.swiper .swiper-wrapper .swiper-slide.main_slide_2 .aboutContainer .slideContent .aboutPanelWrap .aboutBotPanel h4').css('color', '#808080');
@@ -220,7 +220,7 @@ $('.toggleWrap .checkbox')
       $('.swiper .swiper-wrapper .swiper-slide.main_slide_1').css('background-image', 'url(img/main_bg.png)');
       $('.swiper .topNavWrap .logo img').css('filter', 'contrast(1)');
       $('.pfTextMid #logo').css('filter', 'contrast(1)');
-      $('.swiper').css('background-color', '#242121');
+      $('.swiper.mySwiper').css('background-color', '#242121');
       $('.swiper .swiper-wrapper .swiper-slide.main_slide_2 .aboutContainer .slideContent .aboutPanelWrap .aboutBotPanel .aBoxWrapMobile').css('filter', 'contrast(1)');
       $('.swiper .swiper-wrapper .swiper-slide.main_slide_2 .aboutContainer .slideContent .aboutPanelWrap .aboutBotPanel h4').css('color', 'white');
       $('.swiper .swiper-wrapper .swiper-slide.main_slide_2 .aboutContainer .slideContent .aboutPanelWrap .aboutTopPanel .leftAbout .myName').css('color', 'white');
@@ -258,8 +258,67 @@ $('.toggleWrap .checkbox')
     onChange: function() {
       // console.log("변화됨");
     }
-  })
-;
+  });
+
+  $('.videoSelectBtns .videoSelectBtn').on('click', function() {
+    $('.videoSelectBtns .videoSelectBtn').removeClass('vk');
+    // $(this).addClass('active');
+    $(this).addClass('vk');
+
+    $('.ui.fullscreen.modal.videoPfModal .content .vpWrap .screenWrap iframe').remove();
+    
+    // let vList = ['https://www.youtube.com/embed/ZhKRB_wJVg4', 'https://www.youtube.com/embed/KO8jGYBWcUg', 'https://www.youtube.com/embed/ejrH1KoiXBk'];
+    let jcIntro = `<iframe width="100%" height="100%" src="https://www.youtube.com/embed/ZhKRB_wJVg4?autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen autoplay muted></iframe>`;
+    let jackVideo = `<iframe width="100%" height="100%" src="https://www.youtube.com/embed/KO8jGYBWcUg?autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen autoplay muted></iframe>`;
+    let waveonVideo = `<iframe width="100%" height="100%" src="https://www.youtube.com/embed/ejrH1KoiXBk?autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen autoplay muted></iframe>`;
+    if($(this).hasClass('jc_introduction_btn')) {
+      console.log("자기소개");
+      $('.ui.fullscreen.modal.videoPfModal .content .vpWrap .screenWrap').append(jcIntro);
+    }
+    else if($(this).hasClass('jack_daniel_btn')) {
+      console.log("잭다니엘");
+      $('.ui.fullscreen.modal.videoPfModal .content .vpWrap .screenWrap').append(jackVideo);
+    }
+    else if($(this).hasClass('jc_vlog_btn')) {
+      console.log("웨이브온");
+      $('.ui.fullscreen.modal.videoPfModal .content .vpWrap .screenWrap').append(waveonVideo);
+    }
+
+    $('')
+
+  });
+
+/* 
+youtube link src
+1. 자기소개
+https://www.youtube.com/embed/ZhKRB_wJVg4
+2. 잭다니엘
+https://www.youtube.com/embed/KO8jGYBWcUg
+3. 웨이브온
+https://www.youtube.com/embed/ejrH1KoiXBk
+*/
+
+
+$('.modal.videoPfModal')
+  .modal({
+    // onDeny    : function(){
+    //   window.alert('Wait not yet!');
+    //   return false;
+    // },
+    // onApprove : function() {
+    //   window.alert('Approved!');
+    // },
+    onShow : function() {
+      console.log("on show event");
+      let jcIntro = `<iframe width="100%" height="100%" src="https://www.youtube.com/embed/ZhKRB_wJVg4?autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen autoplay muted></iframe>`;
+      $('.ui.fullscreen.modal.videoPfModal .content .vpWrap .screenWrap').append(jcIntro);
+    },
+    onHide : function() {
+      // window.alert("hide modal");
+      $('.ui.fullscreen.modal.videoPfModal .content .vpWrap .screenWrap iframe').remove();
+    }
+  });
+
     
 
 });
