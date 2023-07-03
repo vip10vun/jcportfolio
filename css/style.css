@@ -315,7 +315,8 @@ font-family: 'Noto Sans KR', sans-serif;
     height: 350px;
     /* background-color: lightgray; */
     border-radius: 50%;
-    background: url('../img/blur_one.jpg');
+    /* background: url('../img/blur_one.jpg'); */
+    background: url('../img/jcLee.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
