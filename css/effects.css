@@ -409,6 +409,72 @@
 }
 
 
+@media only screen and (max-width: 1370px) {
+    .swiper .swiper-wrapper .swiper-slide.main_slide_1 .pfIntro {
+        transform: scale(0.8);
+        height: 70%;
+    }
+    .swiper .swiper-wrapper .swiper-slide.main_slide_2 .aboutContainer .slideContent .aboutPanelWrap {
+        padding: 28px;
+    }
+    .swiper .swiper-wrapper .swiper-slide.main_slide_2 .aboutContainer .slideContent .aboutPanelWrap .aboutTopPanel .leftAbout {
+        width: 60%;
+    }
+    .swiper .swiper-wrapper .swiper-slide.main_slide_2 .aboutContainer .slideContent .aboutPanelWrap .aboutTopPanel .rightAbout {
+        width: 40%;
+    }
+    .swiper .swiper-wrapper .swiper-slide.main_slide_2 .aboutContainer .slideContent .aboutPanelWrap .aboutTopPanel .leftAbout .pobu {
+        font-size: 18px;
+    }
+    .swiper .swiper-wrapper .swiper-slide.main_slide_2 .aboutContainer .slideContent .aboutPanelWrap .aboutTopPanel .rightAbout .imgCircle {
+        width: 300px;
+        height: 300px;
+    }
+    .swiper .swiper-wrapper .swiper-slide.main_slide_2 .aboutContainer .slideContent .aboutPanelWrap .aboutTopPanel .leftAbout .aboutBtnWrap {
+        padding-top: 12px;
+        padding-left: 6px;
+    }
+    .swiper .swiper-wrapper .swiper-slide.main_slide_2 .aboutContainer .slideContent .aboutPanelWrap .aboutTopPanel .leftAbout .aboutBtnWrap .aboutBtn {
+        width: 200px;
+        height: 20px;
+        font-size: 1.5rem;
+    } 
+
+    .swiper .swiper-wrapper .swiper-slide.main_slide_3 .pfContainer .slideContent .ccWrap {
+        width: 100%;
+        transform: scale(0.9);
+        margin-bottom: 24px;
+    }
+    .swiper .swiper-wrapper .swiper-slide.main_slide_4 .contactContainer .slideContent .ccWrap {
+        margin-left: 28px;
+    }
+    .swiper .swiper-wrapper .swiper-slide.main_slide_2 .aboutContainer .slideContent .aboutPanelWrap .aboutBotPanel .aBoxWrap {
+        gap: 0 20px;
+    }
+    .swiper .swiper-wrapper .swiper-slide.main_slide_2 .aboutContainer .slideContent .aboutPanelWrap .aboutBotPanel .aBox {
+        padding: 8px;
+        min-width: 127px;
+    }
+    .ui.fullscreen.modal.videoPfModal .content .vpWrap .selectWrap .videoSelectBtns .videoSelectBtn {
+        font-size: 1.2rem;
+        height: 72px;
+    }
+    .ui.fullscreen.modal.videoPfModal .content .vpWrap .selectWrap .videoSelectBtns .videoSelectBtn.active {
+        font-size: 1.3rem;
+    }
+    .gWrap {
+        height: 70%;
+        gap: 0;
+    }
+    .gContainer {
+        transform: scale(0.75);
+        flex-wrap: nowrap;
+    }
+    .ui.fullscreen.modal.webPfModal .wdWrap .responWeb {
+        transform: scale(0.85);
+    }
+
+}
 
 
 @media only screen and (max-width: 1024px) {
@@ -672,6 +738,7 @@
         height: fit-content;
         border-radius: 4px;
         margin-bottom: 8px;
+        
     }
     .ui.fullscreen.modal.graphicPfModal.first .content {
         margin: 0;
