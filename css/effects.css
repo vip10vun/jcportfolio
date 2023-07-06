@@ -453,7 +453,6 @@
     }
     .swiper .swiper-wrapper .swiper-slide.main_slide_2 .aboutContainer .slideContent .aboutPanelWrap .aboutBotPanel .aBox {
         padding: 8px;
-        min-width: 127px;
     }
     .ui.fullscreen.modal.videoPfModal .content .vpWrap .selectWrap .videoSelectBtns .videoSelectBtn {
         font-size: 1.2rem;
