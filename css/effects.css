@@ -442,7 +442,7 @@
 
     .swiper .swiper-wrapper .swiper-slide.main_slide_3 .pfContainer .slideContent .ccWrap {
         width: 100%;
-        transform: scale(0.9);
+        transform: scale(0.85);
         margin-bottom: 24px;
     }
     .swiper .swiper-wrapper .swiper-slide.main_slide_4 .contactContainer .slideContent .ccWrap {
