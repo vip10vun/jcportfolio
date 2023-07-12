@@ -94,8 +94,8 @@ $(function() {
       // download pdf file click event
       $('#downloadButton').on('click', function() {
         // var fileUrl = "../resouce/Lee.pdf";
-        var fileUrl = "/resouce/jc_resume.pdf";
-        var fileName = "jc_resume.pdf";
+        var fileUrl = "resouce/jc_resume.pdf";
+        var fileName = "leejunchan.pdf";
         var element = document.createElement("a");
         element.setAttribute("href", fileUrl);
         element.setAttribute("download", fileName);
