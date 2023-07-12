@@ -95,10 +95,11 @@ $(function() {
       $('#downloadButton').on('click', function() {
         // var fileUrl = "../resouce/Lee.pdf";
         var fileUrl = "../resouce/jc_resume.pdf";
-        var fileName = "jc_inf.pdf";
+        var fileName = "jc_resume.pdf";
         var element = document.createElement("a");
         element.setAttribute("href", fileUrl);
         element.setAttribute("download", fileName);
+        element.setAttribute("target", "_self");
         element.style.display = "none";
         document.body.appendChild(element);
         element.click();
